@@ -60,7 +60,7 @@ class RapidAPIController extends Controller
                 'title' => $title,
                 'category_id' => $categories[$job['industry'] ?? 'construction'] ?? 0 ,
                 'description' => sprintf("%s", $job['jsonLD']['description']),
-                'company_name' => $job['company'] ?? '',
+                'company_name' => $job['jsonLD']['hiringOrganization']['name'] ?? '',
                 'work_type' => 1, // Full Time
                 'slug' => Str::slug($title),
                 'status' => 1,
@@ -76,7 +76,7 @@ class RapidAPIController extends Controller
                 'city_id' => 0,
                 'postal_code' => '',
                 'url' => $job['jsonLD']['url'] ?? '',
-                'job_city' => $job['jsonLD']['jobLocation']['address']['addressLocality'] ?? '',
+                'job_city' => $job['jsonLD']['jobLocation']['address']['addressLocality'] ?? $job['jsonLD']['jobLocation']['name'] ?? '',
                 'address' => '',
                 'youtube_link' => '',
                 'lastdate' => "2024-03-06",
