@@ -1,0 +1,234 @@
+{
+    "Estimate": {
+        "domain": "QBO",
+        "sparse": false,
+        "Id": "13709",
+        "SyncToken": "8",
+        "MetaData": {
+            "CreateTime": "2024-02-20T16:42:57-08:00",
+            "LastUpdatedTime": "2024-02-26T17:12:45-08:00"
+        },
+        "CustomField": [],
+        "DocNumber": "1568",
+        "TxnDate": "2024-02-20",
+        "CurrencyRef": {
+            "value": "USD",
+            "name": "United States Dollar"
+        },
+        "PrivateNote": "602 COMMERCIAL ST, LA PORTE CITY, IA - KITCHEN CHANGE ORDER",
+        "TxnStatus": "Accepted",
+        "Line": [
+            {
+                "Id": "1",
+                "LineNum": 1,
+                "Description": "Tore out all the lath and plaster from the kitchen walls and ceilings (approved on other change order). Found misc plumbing and electrical issues that the building inspector will require to be repaired prior to hanging drywall",
+                "Amount": 0,
+                "DetailType": "SalesItemLineDetail",
+                "SalesItemLineDetail": {
+                    "ItemRef": {
+                        "value": "783",
+                        "name": "AREA OF HOME:KITCHEN"
+                    },
+                    "UnitPrice": 0,
+                    "Qty": 1,
+                    "ItemAccountRef": {
+                        "value": "1",
+                        "name": "IA PROPERTY SERVICES - SALES"
+                    },
+                    "TaxCodeRef": {
+                        "value": "NON"
+                    },
+                    "TaxClassificationRef": {
+                        "value": "EUC-99990201-V1-00020000"
+                    }
+                }
+            },
+            {
+                "Id": "2",
+                "LineNum": 2,
+                "Description": "-insulate kitchen exterior 10x10 wall (code required for rough inspection)\nLabor and material cost to install Kraft Faced Fiberglass Insulation Roll 3-1/2\" x 15\" x 32' - price is per SF - does not include demo work prior to install",
+                "Amount": 225.00,
+                "DetailType": "SalesItemLineDetail",
+                "SalesItemLineDetail": {
+                    "ItemRef": {
+                        "value": "965",
+                        "name": "Insulation:Kraft Faced Fiberglass Insulation - R19"
+                    },
+                    "UnitPrice": 2.25,
+                    "Qty": 100,
+                    "ItemAccountRef": {
+                        "value": "1",
+                        "name": "IA PROPERTY SERVICES - SALES"
+                    },
+                    "TaxCodeRef": {
+                        "value": "NON"
+                    },
+                    "TaxClassificationRef": {
+                        "value": "EUC-99990201-V1-00020000"
+                    }
+                }
+            },
+            {
+                "Id": "3",
+                "LineNum": 3,
+                "Description": "Kitchen ceiling joist near main waste stack was cut when the current water lines were installed. The joist is in a location where it would not be possible to sister in a new LVL beam. We propose adding joist blocking between the cut joist and the the adjacent joist to add additional support and prevent further structural issues.",
+                "Amount": 585.00,
+                "DetailType": "SalesItemLineDetail",
+                "SalesItemLineDetail": {
+                    "ItemRef": {
+                        "value": "923",
+                        "name": "Framing:Structural - Framing"
+                    },
+                    "UnitPrice": 585,
+                    "Qty": 1,
+                    "ItemAccountRef": {
+                        "value": "1",
+                        "name": "IA PROPERTY SERVICES - SALES"
+                    },
+                    "TaxCodeRef": {
+                        "value": "NON"
+                    },
+                    "TaxClassificationRef": {
+                        "value": "EUC-99990201-V1-00020000"
+                    }
+                }
+            },
+            {
+                "Id": "5",
+                "LineNum": 4,
+                "Description": "The water and sewer piping at the kitchen ceiling is visibly worn/damaged. The cast iron joints that run to the upstairs bathtub, sink and toilet have visible water stains. These pipes will need replaced prior to hanging new drywall to prevent further issues and having to go back and open up the ceiling to repair leaking pipes. \n\nWe propose replacing the hot and cold water lines that run from the basement to the second floor bathroom. We will also replace the drain lines for the second floor bathroom.  We will leave the cast iron DWV stack that runs from the basement up through the roof in place as it is still in decent condition. Will tie the new PVC drain piping into the existing waste stack.\n\n***See attached bid from Waldinger Plumbing: $3,019.00 x 1.25 = 3,773.75\n\n***Our approved plumbing bid did not include replacing any of the 2nd floor water or sewer lines. All basement water lines are being replaced per the already approved bid***",
+                "Amount": 3773.75,
+                "DetailType": "SalesItemLineDetail",
+                "SalesItemLineDetail": {
+                    "ItemRef": {
+                        "value": "1064",
+                        "name": "Mechanical:Plumbing:Plumbing Repairs"
+                    },
+                    "UnitPrice": 3773.75,
+                    "Qty": 1,
+                    "ItemAccountRef": {
+                        "value": "1",
+                        "name": "IA PROPERTY SERVICES - SALES"
+                    },
+                    "TaxCodeRef": {
+                        "value": "NON"
+                    },
+                    "TaxClassificationRef": {
+                        "value": "EUC-99990201-V1-00020000"
+                    }
+                }
+            },
+            {
+                "Id": "6",
+                "LineNum": 5,
+                "Description": "There is knob and tube wiring at the kitchen ceiling/wall that will need replaced with new romex cable per electrical code. We propose: \n-Remove knob and tube in kitchen cut back in ceiling and rehook in junction\nbox (main feed to kitchen and first floor lights)\n-Run New wire from panel to junction box and new wire from kitchen\nlight.\n-Remove old cloth feed and junction box in basement\n\n***See attached bid from Premier Electric: $317.00 x 1.25 = $396.25\n\n***Our approved electrical bid did not include replacing any of the kitchen ceiling wiring***",
+                "Amount": 396.25,
+                "DetailType": "SalesItemLineDetail",
+                "SalesItemLineDetail": {
+                    "ItemRef": {
+                        "value": "1005",
+                        "name": "Mechanical:Electrical:Electrical Repair"
+                    },
+                    "UnitPrice": 396.25,
+                    "Qty": 1,
+                    "ItemAccountRef": {
+                        "value": "1",
+                        "name": "IA PROPERTY SERVICES - SALES"
+                    },
+                    "TaxCodeRef": {
+                        "value": "NON"
+                    },
+                    "TaxClassificationRef": {
+                        "value": "EUC-99990201-V1-00020000"
+                    }
+                }
+            },
+            {
+                "Amount": 4980.00,
+                "DetailType": "SubTotalLineDetail",
+                "SubTotalLineDetail": {}
+            }
+        ],
+        "TxnTaxDetail": {
+            "TxnTaxCodeRef": {
+                "value": "3"
+            },
+            "TotalTax": 0,
+            "TaxLine": [
+                {
+                    "Amount": 0,
+                    "DetailType": "TaxLineDetail",
+                    "TaxLineDetail": {
+                        "TaxRateRef": {
+                            "value": "4"
+                        },
+                        "PercentBased": true,
+                        "TaxPercent": 0,
+                        "NetAmountTaxable": 0
+                    }
+                },
+                {
+                    "Amount": 0,
+                    "DetailType": "TaxLineDetail",
+                    "TaxLineDetail": {
+                        "TaxRateRef": {
+                            "value": "6"
+                        },
+                        "PercentBased": true,
+                        "TaxPercent": 1,
+                        "NetAmountTaxable": 0
+                    }
+                },
+                {
+                    "Amount": 0,
+                    "DetailType": "TaxLineDetail",
+                    "TaxLineDetail": {
+                        "TaxRateRef": {
+                            "value": "5"
+                        },
+                        "PercentBased": true,
+                        "TaxPercent": 0,
+                        "NetAmountTaxable": 0
+                    }
+                },
+                {
+                    "Amount": 0,
+                    "DetailType": "TaxLineDetail",
+                    "TaxLineDetail": {
+                        "TaxRateRef": {
+                            "value": "3"
+                        },
+                        "PercentBased": true,
+                        "TaxPercent": 6,
+                        "NetAmountTaxable": 0
+                    }
+                }
+            ]
+        },
+        "ProjectRef": {
+            "value": "321531278"
+        },
+        "CustomerRef": {
+            "value": "404",
+            "name": "602 Commercial St, La Porte City, IA"
+        },
+        "CustomerMemo": {
+            "value": "602 COMMERCIAL ST, LA PORTE CITY, IA - KITCHEN CHANGE ORDER"
+        },
+        "BillAddr": {
+            "Id": "2126",
+            "Line1": "Fannie Mae",
+            "Line2": "602 COMMERCIAL ST, LA PORTE CITY, IA"
+        },
+        "ShipFromAddr": {
+            "Id": "2128",
+            "Line1": "3575 Cedar Terrace Dr, Waterloo, IA, 50702, USA"
+        },
+        "TotalAmt": 4980.00,
+        "ApplyTaxAfterDiscount": false,
+        "PrintStatus": "NotSet",
+        "EmailStatus": "NotSet",
+        "TaxExemptionRef": {}
+    },
+    "time": "2024-02-27T03:26:00.715-08:00"
+}
