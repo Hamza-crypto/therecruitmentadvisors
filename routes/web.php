@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('migrate', function () {
-    Artisan::call('migrate:fresh --seed');
+    Artisan::call('migrate');
     dump('Migration Done');
 });
 
