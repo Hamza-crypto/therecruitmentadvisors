@@ -58,9 +58,9 @@ class RapidAPIController extends Controller
                 'admin_id' => 1,
                 'type' => 'bronze',
                 'title' => $title,
-                'category_id' => $categories[$job['industry']] ,
-                'description' => "a", // sprintf("%s", $job['jsonLD']['description']),
-                'company_name' => $job['company'],
+                'category_id' => $categories[$job['industry'] ?? 'construction'] ?? 0 ,
+                'description' => sprintf("%s", $job['jsonLD']['description']),
+                'company_name' => $job['company'] ?? '',
                 'work_type' => 1, // Full Time
                 'slug' => Str::slug($title),
                 'status' => 1,
@@ -139,13 +139,9 @@ class RapidAPIController extends Controller
 
     public function connect_to_db()
     {
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "job_board";
 
         // Create connection
-        $conn = new \mysqli($servername, $username, $password, $dbname);
+        $conn = new \mysqli(env('REMOTE_DB_SERVER'), env('REMOTE_DB_USER'), env('REMOTE_DB_NAME'), env('REMOTE_DB_PASSWORD'));
 
         // Check connection
         if ($conn->connect_error) {
