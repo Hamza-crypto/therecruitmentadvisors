@@ -20,11 +20,18 @@ class FetchJobs extends Command
 
         $body = [
             'dateCreated' => now()->subDays(4)->format('Y-m-d'),
-            'industry' => 'construction',
+            'countryCode' => 'HU',
         ];
 
-        $response = $rapid_api->call($body);
 
+        $body['industry'] = "construction";
+        $rapid_api->call($body);
+
+        $body['industry'] = "logistics";
+        //$rapid_api->call($body);
+
+        $body['industry'] = "transport";
+        //$rapid_api->call($body);
 
         dump('Jobs Fetched');
     }

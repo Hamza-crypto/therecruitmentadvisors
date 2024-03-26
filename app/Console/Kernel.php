@@ -12,7 +12,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        $schedule->command('quickbooks:refresh-access-token')->hourly();
+        $schedule->command('rapidapi:fetch-jobs')->everyTwoMinutes();
     }
 
     /**
