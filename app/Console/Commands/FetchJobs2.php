@@ -7,10 +7,9 @@ use Illuminate\Support\Facades\Http;
 use App\Http\Controllers\RapidAPI;
 use App\Http\Controllers\RapidAPIController;
 
-class FetchJobs extends Command
+class FetchJobs2 extends Command
 {
-
-    protected $signature = 'rapidapi:fetch-jobs';
+    protected $signature = 'rapidapi:fetch-jobs2';
 
     protected $description = '';
 
@@ -27,8 +26,8 @@ class FetchJobs extends Command
         ];
 
         $categories = [
-            'logistics',
-            'transport',
+            'construction',
+            'healthcare',
         ];
 
         foreach($categories as $category){
