@@ -18,20 +18,24 @@ class FetchJobs extends Command
      {
         $rapid_api = new RapidAPIController();
 
+        /**
+         * Country: HU
+        */
         $body = [
             'dateCreated' => now()->subDays(4)->format('Y-m-d'),
-            'countryCode' => 'HU',
+            // 'countryCode' => 'HU',
         ];
 
+        $categories = [
+            'construction',
+            'logistics',
+            'transport',
+        ];
 
-        $body['industry'] = "construction";
-        $rapid_api->call($body);
-
-        $body['industry'] = "logistics";
-        //$rapid_api->call($body);
-
-        $body['industry'] = "transport";
-        //$rapid_api->call($body);
+        foreach($categories as $category){
+            $body['industry'] = $category;
+            $rapid_api->call($body);
+        }
 
         dump('Jobs Fetched');
     }

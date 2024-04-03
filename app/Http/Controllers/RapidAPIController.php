@@ -22,7 +22,7 @@ class RapidAPIController extends Controller
             'contractType' => 'permanent'
         ];
 
-        $queryParams = array_merge($body, $defaultValues);
+        // $queryParams = array_merge($body, $defaultValues);
         $queryString = http_build_query($queryParams);
 
         $url = sprintf("%s?%s", env('RAPID_API_URL'), $queryString);
@@ -43,8 +43,11 @@ class RapidAPIController extends Controller
         $msg['msg'] = implode(', ', $body) . "\n";
 
         $categories = [
-            'construction' => 59,
             'Construction' => 59,
+            'Logistics' => 58,
+            'Transport' => 58,
+            'Food' => 58,
+            'Agriculture' => 58,
         ];
 
         foreach ($jobs['result'] as $key => $job) {
@@ -133,7 +136,7 @@ class RapidAPIController extends Controller
         if(count($jobs['result']) == 0){
             $msg['msg'] .= sprintf("No jobs found")  . "\n";
         }
-        Notification::route(TelegramChannel::class, '')->notify(new JobFetched($msg));
+        // Notification::route(TelegramChannel::class, '')->notify(new JobFetched($msg));
 
     }
 
