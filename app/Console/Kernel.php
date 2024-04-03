@@ -12,7 +12,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        $schedule->command('rapidapi:fetch-jobs')->daily();
+        $schedule->command('rapidapi:fetch-jobs')->dailyAt('01:00');
+        $schedule->command('rapidapi:fetch-jobs2')->dailyAt('02:00');
+        $schedule->command('rapidapi:fetch-jobs3')->dailyAt('03:00');
     }
 
     /**
